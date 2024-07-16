@@ -1,0 +1,141 @@
+---
+import PostPreview from "../components/PostPreview.astro";
+import PageLayout from "@/layouts/Base.astro";
+import { posts } from "../data/posts";
+import { features } from "../data/features";
+import { notFeatures } from "../data/not-features";
+import { downloads } from "../data/downloads";
+---
+
+<PageLayout meta={{ title: "Home" }}>
+	<section>
+		<h1 class="title mb-6">Opening Monero to the world</h1>
+		<p class="mb-4">
+			Haveno-reto is the flagship instance of Haveno, the non-custodial, decentralized exchange
+			platform for crypto and fiat currencies built on Tor and Monero.
+		</p>
+		<p>It doesn't get more private than that.</p>
+	</section>
+	<section class="mt-16">
+		<h2 class="title mb-4 text-xl">What Haveno-reto is</h2>
+		<dl class="space-y-4">
+			{
+				features.map(({ title }) => (
+					<div class="flex gap-2">
+						<dt>
+							<span class="flex items-center justify-between gap-2">
+								<span>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="lucide lucide-circle-check"
+									>
+										<>
+											<circle cx="12" cy="12" r="10" />
+											<path d="m9 12 2 2 4-4" />
+										</>
+									</svg>
+								</span>
+								<p class="reto-text">{title}</p>
+							</span>
+						</dt>
+					</div>
+				))
+			}
+		</dl>
+	</section>
+	<section class="mt-16">
+		<h2 class="title mb-4 text-xl">What Haveno-reto isn't</h2>
+		<dl class="space-y-4">
+			{
+				notFeatures.map(({ title }) => (
+					<div class="flex gap-2">
+						<dt>
+							<span class="flex items-center justify-between gap-2">
+								<span>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="lucide lucide-circle-x"
+									>
+										<>
+											<circle cx="12" cy="12" r="10" />
+											<path d="m15 9-6 6" />
+											<path d="m9 9 6 6" />
+										</>
+									</svg>
+								</span>
+								<p class="reto-text">{title}</p>
+							</span>
+						</dt>
+					</div>
+				))
+			}
+		</dl>
+	</section>
+	<section id="downloads" class="mt-16">
+		<div class="mb-4 flex items-baseline gap-2">
+			<h2 class="title text-xl">Downloads</h2><p>- Current version v1.0.8</p>
+		</div>
+		<dl class="space-y-4">
+			{
+				downloads.map(({ title, link }) => (
+					<div class="flex gap-2">
+						<dt>
+							<span class="flex items-center justify-between gap-2">
+								<span>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="lucide lucide-arrow-big-down-dash"
+									>
+										<>
+											<path d="M15 5H9" />
+											<path d="M15 9v3h4l-7 7-7-7h4V9z" />
+										</>
+									</svg>
+								</span>
+								<a class="reto-link" data-astro-prefetch href={link}>
+									{title}
+								</a>
+							</span>
+						</dt>
+					</div>
+				))
+			}
+		</dl>
+	</section>
+	<section id="posts" aria-label="Blog post list" class="mt-16">
+		<h2 class="title mb-4 text-xl">Posts by nihilist</h2>
+		<ul class="space-y-4">
+			{
+				posts.map((p) => (
+					<li class="grid gap-2 sm:grid-cols-[auto_1fr] sm:[&_q]:col-start-2">
+						<PostPreview post={p} />
+					</li>
+				))
+			}
+		</ul>
+	</section>
+</PageLayout>

@@ -1,0 +1,12 @@
+---
+import FormattedDate from "./FormattedDate.astro";
+
+const { as: Tag = "div", post } = Astro.props;
+---
+
+<FormattedDate class="min-w-[120px] text-gray-600 dark:text-gray-400" date={post.date} />
+<Tag>
+	<a class="reto-link" data-astro-prefetch href={post.link} target="_blank">
+		{post.title}
+	</a>
+</Tag>
