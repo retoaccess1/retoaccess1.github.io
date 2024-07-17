@@ -8,13 +8,17 @@ import { downloads } from "../data/downloads";
 ---
 
 <PageLayout meta={{ title: "Home" }}>
-	<section>
+	<section class="group">
 		<h1 class="title mb-6">Opening Monero to the world</h1>
 		<p class="mb-4">
 			Haveno-reto is the flagship instance of Haveno, the non-custodial, decentralized exchange
 			platform for crypto and fiat currencies built on Tor and Monero.
 		</p>
-		<p>It doesn't get more private than that.</p>
+		<p class="blur-sm transition duration-1000 group-hover:blur-none">
+			It doesn't get more <span class="transition duration-1000 group-hover:text-accent"
+				>private</span
+			> than that.
+		</p>
 	</section>
 	<section class="mt-16">
 		<h2 class="title mb-4 text-xl">What Haveno-reto is</h2>
@@ -23,7 +27,7 @@ import { downloads } from "../data/downloads";
 				features.map(({ title }) => (
 					<div class="flex gap-2">
 						<dt>
-							<span class="flex items-center justify-between gap-2">
+							<div class="flex items-center justify-between gap-2.5">
 								<span>
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +48,7 @@ import { downloads } from "../data/downloads";
 									</svg>
 								</span>
 								<p class="reto-text">{title}</p>
-							</span>
+							</div>
 						</dt>
 					</div>
 				))
@@ -58,7 +62,7 @@ import { downloads } from "../data/downloads";
 				notFeatures.map(({ title }) => (
 					<div class="flex gap-2">
 						<dt>
-							<span class="flex items-center justify-between gap-2">
+							<div class="flex items-center justify-between gap-2.5">
 								<span>
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +84,7 @@ import { downloads } from "../data/downloads";
 									</svg>
 								</span>
 								<p class="reto-text">{title}</p>
-							</span>
+							</div>
 						</dt>
 					</div>
 				))
@@ -96,7 +100,7 @@ import { downloads } from "../data/downloads";
 				downloads.map(({ title, link }) => (
 					<div class="flex gap-2">
 						<dt>
-							<span class="flex items-center justify-between gap-2">
+							<div class="flex items-center justify-between gap-2.5">
 								<span>
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
@@ -108,18 +112,21 @@ import { downloads } from "../data/downloads";
 										stroke-width="2"
 										stroke-linecap="round"
 										stroke-linejoin="round"
-										class="lucide lucide-arrow-big-down-dash"
+										class="lucide lucide-hard-drive-download"
 									>
 										<>
-											<path d="M15 5H9" />
-											<path d="M15 9v3h4l-7 7-7-7h4V9z" />
+											<path d="M12 2v8" />
+											<path d="m16 6-4 4-4-4" />
+											<rect width="20" height="8" x="2" y="14" rx="2" />
+											<path d="M6 18h.01" />
+											<path d="M10 18h.01" />
 										</>
 									</svg>
 								</span>
 								<a class="reto-link" data-astro-prefetch href={link}>
 									{title}
 								</a>
-							</span>
+							</div>
 						</dt>
 					</div>
 				))
