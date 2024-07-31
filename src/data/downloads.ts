@@ -26,3 +26,14 @@ export const downloads = [
 		title: "Download Public key",
 	},
 ];
+
+interface GitHubRelease {
+	tag_name: string;
+}
+export async function getLatestVersion() {
+	const response = await fetch(
+		"https://api.github.com/repos/retoaccess1/haveno-reto/releases/latest",
+	);
+	const data: GitHubRelease = (await response.json()) as GitHubRelease;
+	return data.tag_name;
+}
