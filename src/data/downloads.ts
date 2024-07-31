@@ -19,4 +19,10 @@ export const downloads = [
 		link: "https://github.com/retoaccess1/haveno-reto/releases/download/v1.0.8/HavenoInstaller-macos-13.zip",
 		title: "Download for Mac",
 	},
+	{
+		download: "reto-public",
+		id: 4,
+		link: "/reto_public.asc",
+		title: "Download Public key",
+	},
 ];
