@@ -4,7 +4,7 @@ import PageLayout from "@/layouts/Base.astro";
 import { posts } from "../data/posts";
 import { features } from "../data/features";
 import { notFeatures } from "../data/not-features";
-import { downloads, getLatestVersion } from "../data/downloads";
+import { downloads } from "../data/downloads";
 import FormattedDate from "../components/FormattedDate.astro";
 ---
 
@@ -98,7 +98,7 @@ import FormattedDate from "../components/FormattedDate.astro";
 
 	<section id="downloads" class="mt-16 space-y-4">
 		<div class="flex items-baseline gap-2">
-			<h2 class="title text-xl">Downloads</h2><p>- Current version {getLatestVersion()}</p>
+			<h2 class="title text-xl">Downloads</h2><p>- Current version v1.0.9</p>
 		</div>
 		<dl class="space-y-4">
 			{

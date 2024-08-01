@@ -1,22 +1,22 @@
 export const downloads = [
 	{
 		id: 1,
-		link: "https://github.com/retoaccess1/haveno-reto/releases/latest/download/HavenoInstaller-windows-latest.zip",
+		link: "https://github.com/retoaccess1/haveno-reto/releases/download/v1.0.9/HavenoInstaller-windows-latest.zip",
 		title: "Download for Windows",
 	},
 	{
 		id: 2,
-		link: "https://github.com/retoaccess1/haveno-reto/releases/latest/download/haveno_amd64-deb.zip",
+		link: "https://github.com/retoaccess1/haveno-reto/releases/download/v1.0.9/haveno_1.0.9-1_amd64.deb",
 		title: "Download for Linux (.deb)",
 	},
 	{
 		id: 3,
-		link: "https://github.com/retoaccess1/haveno-reto/releases/latest/download/haveno_x86_64-rpm.zip",
+		link: "https://github.com/retoaccess1/haveno-reto/releases/download/v1.0.9/haveno-1.0.9-1.x86_64.rpm",
 		title: "Download for Linux (.rpm)",
 	},
 	{
 		id: 4,
-		link: "https://github.com/retoaccess1/haveno-reto/releases/latest/download/HavenoInstaller-macos-13.zip",
+		link: "https://github.com/retoaccess1/haveno-reto/releases/download/v1.0.9/HavenoInstaller-macos-13.zip",
 		title: "Download for Mac",
 	},
 	{
@@ -26,14 +26,3 @@ export const downloads = [
 		title: "Download Public key",
 	},
 ];
-
-interface GitHubRelease {
-	tag_name: string;
-}
-export async function getLatestVersion() {
-	const response = await fetch(
-		"https://api.github.com/repos/retoaccess1/haveno-reto/releases/latest",
-	);
-	const data: GitHubRelease = (await response.json()) as GitHubRelease;
-	return data.tag_name;
-}
