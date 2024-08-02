@@ -12,9 +12,6 @@ import { expressiveCodeOptions } from "./src/site.config";
 
 // https://astro.build/config
 export default defineConfig({
-	image: {
-		domains: ["webmention.io"],
-	},
 	integrations: [
 		expressiveCode(expressiveCodeOptions),
 		icon(),
@@ -42,6 +39,7 @@ export default defineConfig({
 		},
 	},
 	// https://docs.astro.build/en/guides/prefetch/
+	output: "static",
 	prefetch: true,
 	site: "https://haveno-reto.com",
 	vite: {
