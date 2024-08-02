@@ -12,7 +12,6 @@ import { expressiveCodeOptions } from "./src/site.config";
 
 // https://astro.build/config
 export default defineConfig({
-	base: "/haveno-reto",
 	integrations: [
 		expressiveCode(expressiveCodeOptions),
 		icon(),
@@ -42,7 +41,7 @@ export default defineConfig({
 	// https://docs.astro.build/en/guides/prefetch/
 	output: "static",
 	prefetch: true,
-	site: "https://bacqueyrisses.github.io",
+	site: "https://haveno-reto.com",
 	vite: {
 		optimizeDeps: {
 			exclude: ["@resvg/resvg-js"],
