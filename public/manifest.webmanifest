@@ -1,0 +1,21 @@
+{
+	"name": "Haveno-reto",
+	"short_name": "Haveno-reto",
+	"description": "Website fot the haveno-reto project",
+	"icons": [
+		{
+			"src": "/192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"start_url": "/",
+	"background_color": "#1D1F20",
+	"theme_color": "#1D1F20",
+	"display": "standalone"
+}
