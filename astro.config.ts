@@ -43,7 +43,7 @@ export default defineConfig({
 	},
 	// https://docs.astro.build/en/guides/prefetch/
 	prefetch: true,
-	site: "https://haveno-reto.com",
+	site: "https:// bacqueyrisses.github.io",
 	vite: {
 		optimizeDeps: {
 			exclude: ["@resvg/resvg-js"],
