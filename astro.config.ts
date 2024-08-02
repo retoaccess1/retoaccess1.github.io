@@ -12,6 +12,7 @@ import { expressiveCodeOptions } from "./src/site.config";
 
 // https://astro.build/config
 export default defineConfig({
+	base: "/dist",
 	image: {
 		domains: ["webmention.io"],
 	},
