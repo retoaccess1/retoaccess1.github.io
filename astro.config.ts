@@ -12,10 +12,7 @@ import { expressiveCodeOptions } from "./src/site.config";
 
 // https://astro.build/config
 export default defineConfig({
-	base: "haveno-reto",
-	image: {
-		domains: ["webmention.io"],
-	},
+	base: "/haveno-reto",
 	integrations: [
 		expressiveCode(expressiveCodeOptions),
 		icon(),
