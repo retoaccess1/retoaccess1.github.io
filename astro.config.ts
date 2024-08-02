@@ -43,10 +43,6 @@ export default defineConfig({
 	},
 	// https://docs.astro.build/en/guides/prefetch/
 	output: "static",
-	outDir: "./docs",
-	build: {
-		assets: "astro",
-	},
 	prefetch: true,
 	site: "https://bacqueyrisses.github.io",
 	vite: {
