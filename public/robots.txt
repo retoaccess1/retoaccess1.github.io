@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://haveno-reto.com/sitemap-index.xml
