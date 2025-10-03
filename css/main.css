@@ -2403,6 +2403,12 @@ figcaption {
   display: grid;
 }
 
+.macos-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
 .download-grid-and-cta {
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
