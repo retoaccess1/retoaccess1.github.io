@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Penalties and Resolutions</title>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style
+  </head>
+  <body>
+    <header></header>
+    <main>
+Last changed: 2026-01-01
+<h1 style="border-bottom: 2px solid #ccc; padding-bottom: 6px;">Table of penalties</h1>
+<b>Penalties</b> help enforce the RetoSwap Trading Rules, ensuring the process is as safe and fair as possible. The penalties detailed on this page apply specifically to trading protocols that utilize security deposits as their primary security mechanism. Protocols that do not use security deposits, like No Deposit offers which rely on passphrases, will have slightly different rules.<br><br>
+Penalties are calculated as a percentage of the trade amount and are deducted <b>primarily</b> from the offending peer's security deposit. During the dispute resolution process, this amount may be assigned as to the counterparty as compensation. (Note: See below regarding 100% penalties potentially affecting the trade amount as well).<br><br>
+
+<b>Important Notes:</b><br>
+<ul>
+<li>The actual penalty applied is <b>up to</b> the maximum percentage listed below, considering the security deposit size and the arbitrator's discretion.</li>
+<li>100% penalties represent serious violations and usually mean losing the entire security deposit <b>and potentially the trade amount itself.</b></li>
+<li>Penalties are <b>not cumulative</b>; if multiple violations occur, the single highest applicable penalty percentage is typically used.</li>
+<li>Peers experiencing issues are encouraged to communicate via trader chat. If mutually agreed, they can suggest a specific penalty amount to the arbitrator.</li>
+<li>Sometimes disputes might get resolved before the arbitrator could make a decision. In that case there is no entitlement to compensastion.</li>
+</ul>
+
+<h3 style="border-bottom: 2px solid #ccc; padding-bottom: 6px;">Penalties Applicable to Either Trader
+</h3>
+These penalties can apply to either the XMR Buyer or the XMR Seller, depending on who commits the violation in a protocol using security deposits.<br><br>
+<table style="width: 100%;">
+
+<tbody><tr>
+<th style="width: 15%;">Max Penalty (%)</th>
+<th style="width: 85%;">Violation Description
+</th></tr>
+<tr>
+<td style="text-align:center;">100</td>
+<td>Fraud attempt (e.g., unauthorized debiting of peer's account, malicious code tampering).
+</td></tr>
+<tr>
+<td style="text-align:center;">50</td>
+<td>Attempting to solicit off-platform communication by including contact information in offer details (e.g., in 'additional information' field).
+</td></tr>
+<tr>
+<td style="text-align:center;">25</td>
+<td>Not responding to arbitrator inquiries within 48 hours during an active dispute resolution process.
+</td></tr>
+<tr>
+<td style="text-align:center;">25</td>
+<td>Contacting trading peer outside of RetoSwap trader chat without prior consent or a clear, necessary reason related to completing the payment.
+</td></tr>
+<tr>
+<td style="text-align:center;">20</td>
+<td>Cancelling an accepted trade without a valid reason according to Trading Rules.
+</td></tr>
+<tr>
+<td style="text-align:center;">20</td>
+<td>Requesting payment be sent to, or insisting on paying from, a different account/name than agreed in the trade details, without arbitrator approval.
+</td></tr>
+<tr>
+<td style="text-align:center;">10</td>
+<td>Requiring excessive personal data from the counterparty beyond what is strictly necessary for the chosen payment method (e.g., demanding ID copies, proof of address unless intrinsic to the method like Cash by Mail).
+</td></tr>
+<tr>
+<td style="text-align:center;">10</td>
+<td>Abusive or disrespectful behavior towards the trading peer, Arbitrator, or during the dispute process.
+</td></tr></tbody></table>
+<h3 style="border-bottom: 2px solid #ccc; padding-bottom: 6px;">Penalties Applicable Specifically to the XMR Buyer
+</h3>
+These penalties apply only to the trader buying XMR (sending fiat or altcoins) in a protocol using security deposits.<br><br>
+
+<table style="width: 100%;">
+<tbody><tr>
+<th style="width: 15%;">Max Penalty (%)</th>
+<th style="width: 85%;">Violation Description
+</th></tr>
+<tr>
+<td style="text-align:center;">100</td>
+<td>Payment chargeback after trade completion.
+</td></tr>
+<tr>
+<td style="text-align:center;">25</td>
+<td>Using Crypto-related terms (e.g., "XMR", "RetoSwap", "Crypto") in payment references/notes.
+</td></tr>
+<tr>
+<td style="text-align:center;">25</td>
+<td>Paying from an account with a significantly different name (indicating a likely third party). <i>Note: Seller may cancel trade without penalty.</i>
+</td></tr>
+<tr>
+<td style="text-align:center;">20</td>
+<td>Payment sent is 72+ hours late (beyond the trade period).
+</td></tr>
+<tr>
+<td style="text-align:center;">15</td>
+<td>Payment sent is 48-72 hours late.
+</td></tr>
+<tr>
+<td style="text-align:center;">15</td>
+<td>Paying from an account with the correct name but different account details (e.g., wrong bank/account number) than specified for the payment method. <i>Note: Seller may cancel trade without penalty.</i>
+</td></tr>
+<tr>
+<td style="text-align:center;">10</td>
+<td>Payment sent is 24-48 hours late.
+</td></tr>
+<tr>
+<td style="text-align:center;">10</td>
+<td>Using a similar but incorrect payment method that causes issues (e.g., sending via standard SWIFT when SEPA was agreed).
+</td></tr>
+<tr>
+<td style="text-align:center;">10</td>
+<td>Paying the wrong fiat amount. <i>Note: Buyer usually has the option to correct the amount within the trade window. Seller may cancel trade without penalty if not corrected promptly.</i>
+</td></tr>
+<tr>
+<td style="text-align:center;">10</td>
+<td>Using an unagreed payment reference/memo, including potentially problematic neutral terms or the Trade ID itself.
+</td></tr>
+<tr>
+<td style="text-align:center;">10</td>
+<td>Delayed altcoin payment due to Buyer choosing an extremely low network fee. <i>Note: Penalty may be reduced if Buyer uses transaction acceleration techniques (RBF, CPFP).</i>
+</td></tr>
+<tr>
+<td style="text-align:center;">5</td>
+<td>Payment sent is up to 24 hours late.
+</td></tr></tbody></table>
+
+<h3 style="border-bottom: 2px solid #ccc; padding-bottom: 6px;">Penalties Applicable Specifically to the XMR Seller
+</h3>
+These penalties apply only to the trader selling XMR (receiving fiat or altcoins) in a protocol using security deposits.<br><br>
+<table style="width: 100%;">
+
+<tbody><tr>
+<th style="width: 15%;">Max Penalty (%)</th>
+<th style="width: 85%;">Violation Description
+</th></tr>
+<tr>
+<td style="text-align:center;">25</td>
+<td>Incorrect data in fiat account setup, used as-is by the buyer, causes buyer's bank to intervene (penalty amount depends on the nature of the bank's intervention)
+</td></tr>
+<tr>
+<td style="text-align:center;">15</td>
+<td>XMR is released significantly outside the expected timeframe after payment confirmation, without valid reason.
+</td></tr></tbody></table>
+
+
+
+
+
+
+
+
+
+    </main>
+    <footer></footer>
+  </body>
+</html>
